@@ -1,52 +1,242 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio</title>
+    <title>Portfólio - Analista de Dados</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #e5ffde;
+            color: #0b0a07;
+            scroll-behavior: smooth;
         }
+
         header {
-            background-color: #333;
-            color: white;
-            padding: 1em;
+            background-color: #0b0a07;
+            padding: 40px 20px;
+            text-align: center;
+            color: #ffffff;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav {
+            text-align: center;
+            background-color: #5ca6ce;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        nav a {
+            color: #0b0a07;
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffffff;
+        }
+
+        section {
+            padding: 60px 20px;
+            text-align: center;
+            background-color: #8ab4d6;
+        }
+
+        h2 {
+            color: #0b0a07;
+            border-bottom: 2px solid #0b0a07;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+            font-size: 2em;
+            position: relative;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .experience, .projects, .skills, .courses {
+            background-color: #fdfdfd;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 40px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .experience:hover, .projects:hover, .skills:hover, .courses:hover {
+            transform: translateY(-10px);
+        }
+
+        .experience h3, .projects h3, .courses h3 {
+            color: #0b0a07;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .skills ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .skills li {
+            background-color: #0b0a07;
+            color: #e5ffde;
+            padding: 10px 20px;
+            margin: 10px 0;
+            border-radius: 5px;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+
+        .skills li:hover {
+            background-color: #bbcbcb;
+            color: #0b0a07;
+        }
+
+        .contact {
             text-align: center;
         }
-        main {
-            padding: 2em;
+
+        .contact p {
+            margin: 5px 0;
         }
+
+        .contact a img {
+            width: 40px;
+            height: 40px;
+            margin: 0 10px;
+            transition: transform 0.3s;
+        }
+
+        .contact a img:hover {
+            transform: scale(1.1);
+        }
+
         footer {
-            background-color: #333;
-            color: white;
-            padding: 1em;
+            background-color: #0b0a07;
             text-align: center;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            padding: 20px;
+            color: #e5ffde;
+            position: relative;
+            box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        footer p {
+            margin: 0;
         }
     </style>
+	<script type="text/javascript">
+      window.onload = function(){
+      (function(d, script) {
+      script = d.createElement('script');
+      script.type = 'text/javascript';
+      script.async = true;
+      script.src = 'https://w.app/widget-v1/NiKY7f.js';
+      d.getElementsByTagName('head')[0].appendChild(script);
+      }(document));
+      };
+      </script>
 </head>
+
 <body>
     <header>
-        <h1>Bem-vindo ao Meu Portfólio</h1>
+        <h1>Portfólio de Analista de Dados</h1>
     </header>
-    <main>
-        <h2>Sobre Mim</h2>
-        <p>Adicione uma breve descrição sobre você aqui.</p>
-        <h2>Projetos</h2>
-        <ul>
-            <li><a href="link_do_projeto_1">Projeto 1</a></li>
-            <li><a href="link_do_projeto_2">Projeto 2</a></li>
-            <li><a href="link_do_projeto_3">Projeto 3</a></li>
-        </ul>
-    </main>
+
+    <nav>
+        <a href="#about">Sobre Mim</a>
+        <a href="#experience">Experiência</a>
+        <a href="#projects">Projetos</a>
+        <a href="#skills">Habilidades</a>
+        <a href="#courses">Cursos</a>
+        <a href="#contact">Contato</a>
+    </nav>
+
+    <section id="about">
+        <div class="container">
+            <h2>Sobre Mim</h2>
+            <p>Sou um analista de dados com experiência em produtos de crédito e investimentos. Tenho paixão por transformar dados em insights acionáveis que ajudam as empresas a tomar decisões informadas.</p>
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="container experience">
+            <h2>Experiência</h2>
+            <h3>Empresa XYZ - Analista de Dados</h3>
+            <p>Responsável por analisar grandes volumes de dados financeiros e fornecer relatórios detalhados para a tomada de decisões estratégicas.</p>
+            <h3>Empresa ABC - Estagiário em Análise de Dados</h3>
+            <p>Suporte na criação de dashboards e relatórios para diversos departamentos, focando em eficiência operacional e otimização de processos.</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container projects">
+            <h2>Projetos</h2>
+            <h3>Dashboard de Performance de Investimentos</h3>
+            <p>Criação de um dashboard interativo que monitora o desempenho de portfólios de investimentos em tempo real.</p>
+            <h3>Análise de Risco de Crédito</h3>
+            <p>Desenvolvimento de um modelo preditivo para avaliação de risco de crédito, utilizando técnicas de machine learning.</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container skills">
+            <h2>Habilidades</h2>
+            <ul>
+                <li>Python, R</li>
+                <li>SQL, NoSQL</li>
+                <li>Power BI, Tableau</li>
+                <li>Modelagem de Dados</li>
+                <li>Machine Learning</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="courses">
+        <div class="container courses">
+            <h2>Cursos</h2>
+            <h3>Certificação em Análise de Dados - Alura</h3>
+            <p>Acesse meu certificado completo <a href="https://cursos.alura.com.br/user/adrianolink/fullCertificate/ad2167a8dad680a69c3eb7d26250f2f2" target="_blank">aqui</a>.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container contact">
+            <h2>Contato</h2>
+            <p>Email: datascience@adrianolink.com</p>
+            <a href="mailto:seuemail@dominio.com">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" alt="Gmail Logo">
+            </a>
+            <a href="https://www.linkedin.com/in/seu-perfil" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn Logo">
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=5547996430982&text=Ol%C3%A1,%20gostei%20de%20seu%20portf%C3%B3lio,%20vamos%20conversar?" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo">
+            </a>
+        </div>
+    </section>
+
     <footer>
-        <p>&copy; 2024 Seu Nome</p>
+        <p>© 2024 Seu Nome. Todos os direitos reservados.</p>
     </footer>
 </body>
+
 </html>
+
